@@ -1,0 +1,15 @@
+##YOU NEED TO GENERATE THOSE TWO FILES BEFORE RUNING THE NON-EQ SIMULATION
+### Open Tk console in VMD
+# Load a pdb and psf file into both psfgen and VMD.
+resetpsf
+readpsf structure.psf
+coordpdb structure.pdb
+mol load psf structure.psf pdb structure.pdb
+
+# Delete the segid corresponding to the cholesterol molecules in the allosteric site.
+delatom P1
+delatom P3
+# Have psfgen write out the new psf and pdb file (VMD’s structure and
+# coordinates are unmodified!).
+writepsf x_out.psf
+writepdb x_out.pdb

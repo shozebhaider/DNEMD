@@ -1,0 +1,22 @@
+atomRestraint			"protein and name CA" axes xyz width 2 setpoints 5@0ns 3@3ns 0@5ns
+fbrefcoor			structure.restrained.pdb
+
+barostat	              	on
+celldimension                  	90.31599807739258 74.47199630737305 83.84499740600586
+coordinates                    	structure.pdb
+cutoff                         	9
+langevin                       	on
+langevindamping                	1
+langevintemp                   	300
+minimize                       	5000
+parmfile                       	x.prmtop
+pme                            	on
+restart                        	on
+structure                      	x.prmtop
+switchdist                     	7.5
+switching                      	on
+temperature                    	300
+timestep                       	4
+trajectoryfile                  trajectory.xtc
+trajectoryfreq                  25000
+run                            	5ns

@@ -1,0 +1,21 @@
+#
+bincoordinates       	x_out.coor
+binvelocities           x_out.vel
+coordinates          	x_out.pdb
+cutoff               	9
+extendedsystem       	output.xsc
+parameters           	parameters
+pme                  	on
+restart              	on
+slowperiod           	2
+structure            	x_out.psf
+switchdistance       	7.5
+switching            	on
+temperature          	310
+thermostat           	on
+thermostatdamping    	0.1
+thermostattemperature	310
+timestep             	4
+trajectoryfile       	trajectory.xtc
+trajectoryperiod     	25000
+run                  	10ns

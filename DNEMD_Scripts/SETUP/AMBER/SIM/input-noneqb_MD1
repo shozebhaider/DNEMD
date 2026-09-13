@@ -1,0 +1,23 @@
+#
+bincoordinates                 	x_out.coor
+coordinates                    	x_out.pdb
+cutoff                         	9
+extendedsystem                 	output.xsc
+langevin                       	on
+langevindamping                	0.1
+langevintemp                   	300
+parmfile                       	x_out.prmtop
+pme                            	on
+restart                        	on
+structure                      	x_out.prmtop
+switchdist                     	7.5
+switching                      	on
+temperature                    	300
+timestep                       	4
+xtcfile                        	trajectory.xtc
+xtcfreq                        	25000
+
+useflexiblecell 		off
+useconstantratio 		off
+
+run                            	5ns

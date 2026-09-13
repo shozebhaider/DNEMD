@@ -1,0 +1,20 @@
+#
+bincoordinates       	input.coor
+coordinates          	structure.pdb
+cutoff               	9
+extendedsystem       	input.xsc
+parameters           	parameters
+pme                  	on
+restart              	on
+slowperiod           	2
+structure            	structure.psf
+switchdistance       	7.5
+switching            	on
+temperature          	310
+thermostat           	on
+thermostatdamping    	0.1
+thermostattemperature	310
+timestep             	4
+trajectoryfile       	trajectory.xtc
+trajectoryperiod     	25000
+run                  	170ns
